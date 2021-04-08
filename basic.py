@@ -19,9 +19,31 @@ print(mean(2))
 
 list_eg = ["H", "O", "S", "B"]
 string_eg = "Hello"
+colors = [11, 34.1, 98.2, 43, 45.1, 54, 54]
+dict_eg = {"London": 1, "Madrid": 2, "Lisbon": 3}
 
 for letter in list_eg:
     print(letter)
 
 for letter in string_eg:
     print(letter)
+
+for color in colors:
+    if isinstance(color, int):
+        print(color)
+
+for city in dict_eg.items():
+    print(city)
+
+for city in dict_eg.keys():
+    print(city) 
+
+for city in dict_eg.values():
+    print(city) 
+
+
+phone_numbers = {"John Smith": "+37682929928", "Marry Simpons": "+423998200919"}
+ 
+for key, value in phone_numbers.items():
+    print("{} has as phone number {}".format(key, value))
+
