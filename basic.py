@@ -14,3 +14,14 @@ mean_dict = {"a": 2, "b": 4, "c": 6}
 print(mean(mean_list))
 print(mean(mean_dict))
 print(mean(2))
+
+# for loop
+
+list_eg = ["H", "O", "S", "B"]
+string_eg = "Hello"
+
+for letter in list_eg:
+    print(letter)
+
+for letter in string_eg:
+    print(letter)
