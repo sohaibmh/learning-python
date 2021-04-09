@@ -47,3 +47,22 @@ phone_numbers = {"John Smith": "+37682929928", "Marry Simpons": "+423998200919"}
 for key, value in phone_numbers.items():
     print("{} has as phone number {}".format(key, value))
 
+for value in phone_numbers.values():
+    print(value.replace("+", "00"))
+
+
+# while loop 
+
+while True:
+    username = input("Enter username: ")
+    if username == "Sohaib":
+        break
+    else:
+        continue
+
+def foo(list_):
+    return [i for i in list_ if i > 0 ]
+    
+def foo(lst):
+    return [i for i in lst if  isinstance(i, int)]
+    
