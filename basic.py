@@ -60,9 +60,14 @@ while True:
     else:
         continue
 
+
+# List Comprehensions 
+
 def foo(list_):
     return [i for i in list_ if i > 0 ]
     
 def foo(lst):
     return [i for i in lst if  isinstance(i, int)]
-    
+
+def foo(lst):
+    return [i*2 if i>0 else 0 for i in lst]
