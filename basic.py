@@ -71,3 +71,9 @@ def foo(lst):
 
 def foo(lst):
     return [i*2 if i>0 else 0 for i in lst]
+
+
+# Indifinite number of arguments
+
+def foo(*args):
+    return args
