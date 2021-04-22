@@ -93,6 +93,25 @@ myfile.close()
 
 # another way of writing the above, as a block:
 with open("README.md") as myfile:
-    print(myfile.read())
+    content = myfile.read()
+    print(content)
 
-    
+    # this would only print the first five characters
+    print(content[:5])
+
+    print(content.count("h"))
+
+# creating a new file
+# the second argument means to "write", by default it's "r" i.e. "read"
+with open("fruits.txt", "w") as myfile:
+    myfile.write("Mango\nBanana\nApple")   
+
+# "a" opens the file for writing, however it won't over-write the existing content
+# "+" allows the file to be read 
+with open("fruits.txt", "a+") as myfile:
+    myfile.write("\nGrapes")
+    # this takes the cursor back to the top
+    myfile.seek(0)
+    content = myfile.read()
+    print(content)
+
