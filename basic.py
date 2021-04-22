@@ -53,12 +53,12 @@ for value in phone_numbers.values():
 
 # while loop 
 
-while True:
-    username = input("Enter username: ")
-    if username == "Sohaib":
-        break
-    else:
-        continue
+# while True:
+#     username = input("Enter username: ")
+#     if username == "Sohaib":
+#         break
+#     else:
+#         continue
 
 
 # List Comprehensions 
@@ -77,3 +77,22 @@ def foo(lst):
 
 def foo(*args):
     return args
+
+# File processing 
+
+# an object gets created when you open a file
+myfile = open("README.md")
+
+# when you open a file the cursor is initially at the start of the file,
+# but when you read it, the cursor goes to the end of the file,
+# so if I print the below twice, for the second one it will only be an empty string
+print(myfile.read())
+
+# this removes it from memory
+myfile.close()
+
+# another way of writing the above, as a block:
+with open("README.md") as myfile:
+    print(myfile.read())
+
+    
